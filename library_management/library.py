@@ -49,6 +49,8 @@ class Library:
         Args:
         - member (Member): The member to be removed.
         """
+        if member in self.member:
+            self.member.remove(member)
         
 
     def borrow_book(self, book, member):
