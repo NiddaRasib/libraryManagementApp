@@ -21,7 +21,7 @@ class Library:
         """
         Adds a book to the library.
         """
-        self.book.append(Book)  
+        self.books.append(book)  
         
 
     def remove_book(self, book):
@@ -39,7 +39,7 @@ class Library:
         Args:
         - member (Member): The member to be added.
         """
-        self.member.append(member)
+        self.members.append(member)
         
 
     def remove_member(self, member):
@@ -50,7 +50,7 @@ class Library:
         - member (Member): The member to be removed.
         """
         if member in self.member:
-            self.member.remove(member)
+            self.members.remove(member)
         
 
     def borrow_book(self, book, member):
