@@ -7,7 +7,6 @@ class Book:
     author (str): The author of the book.
     """
 
-    def __init__(self, title, author):
         """
         Constructs all the necessary attributes for the book object.
 
