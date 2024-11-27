@@ -15,4 +15,3 @@ class Book:
         author (str): The author of the book.
         """
         self.title = title
-        self.author = author
