@@ -24,6 +24,7 @@ class Library:
         Args:
         - book (Book): The book to be added.
         """
+        self.book.append(Book)  
         
 
     def remove_book(self, book):
