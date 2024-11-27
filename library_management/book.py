@@ -5,6 +5,7 @@ class Book:
     Attributes:
     title (str): The title of the book.
     author (str): The author of the book.
+    isbn (str): The isbn of the book.
     """
 
         """
