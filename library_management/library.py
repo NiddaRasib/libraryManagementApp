@@ -20,9 +20,6 @@ class Library:
     def add_book(self, book):
         """
         Adds a book to the library.
-
-        Args:
-        - book (Book): The book to be added.
         """
         self.book.append(Book)  
         
@@ -30,9 +27,6 @@ class Library:
     def remove_book(self, book):
         """
         Removes a book from the library.
-
-        Args:
-        - book (Book): The book to be removed.
         """
         if book in self.books:
             self.book.remove(Book)
