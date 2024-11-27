@@ -34,6 +34,7 @@ class Library:
         Args:
         - book (Book): The book to be removed.
         """
+        self.book.remove(Book)
         
 
     def add_member(self, member):
