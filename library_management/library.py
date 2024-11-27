@@ -35,9 +35,6 @@ class Library:
     def add_member(self, member):
         """
         Adds a member to the library.
-
-        Args:
-        - member (Member): The member to be added.
         """
         self.members.append(member)
         
@@ -45,9 +42,6 @@ class Library:
     def remove_member(self, member):
         """
         Removes a member from the library.
-
-        Args:
-        - member (Member): The member to be removed.
         """
         if member in self.member:
             self.members.remove(member)
