@@ -39,6 +39,7 @@ class Library:
         Args:
         - member (Member): The member to be added.
         """
+        self.member.append(Member)
         
 
     def remove_member(self, member):
