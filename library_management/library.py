@@ -14,8 +14,8 @@ class Library:
         """
         Initializes an empty library.
         """
-        self.books = []
-        self.members = []
+        self.books = [] # empty list to store books
+        self.members = [] # empty list to store members of the library
 
     def add_book(self, book):
         """
