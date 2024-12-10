@@ -36,12 +36,15 @@ class Book:
                 f"ISBN: {self.isbn}")
     
 
+# User input of the book
 title = input("Enter the title of the book: ")
 author = input("Enter the author name of the book: ")
 isbn = input("Enter the isbn of the book: ")
 
+# instance of the Book
 book = Book(title, author, isbn)
 
+# Printing the inputted book details
 print(book)
 
 
