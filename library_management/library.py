@@ -29,8 +29,7 @@ class Library:
         """
         Removes a book from the library.
         """
-        if book in self.books:
-            self.books.remove(book)
+        self.books = [book for book in self.books if book.book != book]
 
 
     def add_member(self, member):
