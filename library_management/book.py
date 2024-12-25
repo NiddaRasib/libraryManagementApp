@@ -34,10 +34,8 @@ class Book:
         isbn (str): The isbn of the book.
         """
         def __str__(self):
-            status_of_book = "Borrowed" if self.is_borrowed else "Available"
-        return (f"Title: {self.title}", 
-                f"Author: {self.author}", 
-                f"ISBN: {self.isbn}")
+            status = "Borrowed" if self.is_borrowed else "Available"
+            return f"Title: {self.title}, Author: {self.author}, ISBN: {self.isbn}, Status: {status}"
     
 
 
