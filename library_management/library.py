@@ -1,6 +1,6 @@
 import json
 from .book import Book
-from .member import Member
+from .member import Member, StudentMember, TeacherMember
 
 class Library:
     """
