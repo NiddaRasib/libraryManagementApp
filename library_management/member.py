@@ -12,8 +12,10 @@ class Member:
 
         Parameters:
         - name (str): The name of the member.
+        - member_id (str): The ID of the member.
         """
         self.name = name
+        self.member_id = member_id
         self.borrowed_books = []
 
     def borrow_book(self, book):
@@ -24,7 +26,7 @@ class Member:
         - book (Book): The book to be borrowed.
         """
         self.borrowed_books.append(book)
-        
+
 
     def return_book(self, book):
         """
