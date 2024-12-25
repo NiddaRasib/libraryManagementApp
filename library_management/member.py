@@ -51,8 +51,8 @@ class StudentMember(Member):
     - student_id (str): The student ID of the member.
     """
     def __init__(self, name, student_id):
-        super().__init__(name)
-        self.student_id = student_id
+        super().__init__(name, student_id)
+        
 
 
 class TeacherMember(Member):
@@ -63,5 +63,5 @@ class TeacherMember(Member):
     - teacher_id (str): The teacher ID of the member.
     """
     def __init__(self, name, teacher_id):
-        super().__init__(name)
-        self.teacher_id = teacher_id
+        super().__init__(name, teacher_id)
+        
