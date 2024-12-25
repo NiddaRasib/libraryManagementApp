@@ -43,8 +43,7 @@ class Library:
         """
         Removes a member from the library.
         """
-        if member in self.members:
-            self.members.remove(member)
+        self.members = [member for member in self.members if member.member != member]
         
 
     def borrow_book(self, book, member):
