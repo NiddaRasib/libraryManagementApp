@@ -24,6 +24,7 @@ class Member:
         - book (Book): The book to be borrowed.
         """
         self.borrowed_books.append(book)
+        
 
     def return_book(self, book):
         """
@@ -33,6 +34,7 @@ class Member:
         - book (Book): The book to be returned.
         """
         self.borrowed_books.remove(book)
+
 
     def list_borrowed_books(self):
         """Returns a list of borrowed book titles."""
