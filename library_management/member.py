@@ -6,9 +6,9 @@ class Member:
     - name (str): The name of the member.
     - borrowed_books (list): A list of books borrowed by the member.
     """
-    def __init__(self, name):
+    def __init__(self, name, member_id):
         """
-        Initializes the member with a name and an empty list of borrowed books.
+        Initializes the member with a name, member ID, and an empty list of borrowed books.
 
         Parameters:
         - name (str): The name of the member.
