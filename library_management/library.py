@@ -46,7 +46,7 @@ class Library:
         self.members = [member for member in self.members if member.name != name]
         
 
-    def borrow_book(self, book, member):
+    def list_borrowed_book(self, book, member):
         """
         Allows a member to borrow a book from the library.
 
@@ -54,9 +54,9 @@ class Library:
         - book (Book): The book to be borrowed.
         - member (Member): The member borrowing the book.
         """
-        if book in self.books:
-            self.books.remove(book)
-            member.borrow_book(book)
+        for member in self.members:
+            for book in member.borrow_books:
+                print(f"Title: {book.title}, Borrowed by: {member.name}")
         
 
     def list_available_books(self):
