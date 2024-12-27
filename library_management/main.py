@@ -1,7 +1,7 @@
 
-from .book import Book
-from .member import StudentMember, TeacherMember
-from .library import Library
+from book import Book
+from member import StudentMember, TeacherMember
+from library import Library
 
 def main_menu():
 

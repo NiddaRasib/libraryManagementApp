@@ -64,10 +64,10 @@ class Library:
         Lists all available books in the library.
         """
         for book in self.books:
-            print(f"Title: {book.title}, Author: {book.author}")
+            print(f"Title: {book.title}, Author: {book.author}, ISBN: {book.isbn}")
 
 
-    def list_borrowed_books(self, member_name, book_title):
+    def borrow_book(self, member_name, book_title):
         """
         Lists all borrowed books and their borrowers.
         """
