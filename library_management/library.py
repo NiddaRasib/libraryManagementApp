@@ -44,11 +44,12 @@ class Library:
         Removes a member from the library.
         """
         self.members = [member for member in self.members if member.name != name]
+
         
 
     def list_borrowed_book(self, book, member):
         """
-        Allows a member to borrow a book from the library.
+        lists all the borrowed books from the library.
 
         Args:
         - book (Book): The book to be borrowed.
@@ -65,6 +66,9 @@ class Library:
         """
         for book in self.books:
             print(f"Title: {book.title}, Author: {book.author}, ISBN: {book.isbn}")
+
+
+
 
 
     def borrow_book(self, member_name, book_title):
