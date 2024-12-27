@@ -1,0 +1,72 @@
+
+{
+    "books": [
+    {
+        "title": "Fluent Python",
+        "author": "Luciano Ramalho",
+        "isbn": "9781491946268",
+        "is_borrowed": false
+    },
+
+    {
+        "title": "Python for Kids",
+        "author": "Jason R. Briggs ",
+        "isbn": "9781593274948",
+        "is_borrowed": false
+    },
+
+    {
+        "title": "Python Cookbook",
+        "author": "David Beazley, Brian K. Jones",
+        "isbn": "9781449357351",
+        "is_borrowed": false
+    },
+
+    {
+        "title": "Learning Python",
+        "author": "Mark Lutz",
+        "isbn": "9780596554491",
+        "is_borrowed": false
+    },
+
+    {
+        "title": "Classic Computer Science Problems in Swift",
+        "author": "David Kopec",
+        "isbn": "9781638356110",
+        "is_borrowed": false
+    }
+    ],
+
+    "members": [
+    {
+        "name": "Ezra Sherman",
+        "type": "teachermember",
+        "id": "48762"
+    },
+
+    {
+        "name": "Cindy Leon",
+        "type": "teachermember",
+        "id": "19865"
+    },
+    
+    {
+        "name": "Ricardo Kane",
+        "type": "studentmember",
+        "id": "29740"
+    },
+    
+    {
+        "name": "Lukas Barrera",
+        "type": "studentmember",
+        "id": "35489"
+    },
+    
+    {
+        "name": "Kiana Butler",
+        "type": "studentmember",
+        "id": "38761"
+    }
+    
+    ]
+}
