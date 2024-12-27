@@ -25,11 +25,11 @@ class Library:
         self.books.append(book)  
         
 
-    def remove_book(self, book):
+    def remove_book(self, title):
         """
         Removes a book from the library.
         """
-        self.books = [book for book in self.books if book.book != book]
+        self.books = [book for book in self.books if book.title != title]
 
 
     def add_member(self, member):
@@ -39,11 +39,11 @@ class Library:
         self.members.append(member)
         
 
-    def remove_member(self, member):
+    def remove_member(self, name):
         """
         Removes a member from the library.
         """
-        self.members = [member for member in self.members if member.member != member]
+        self.members = [member for member in self.members if member.name != name]
         
 
     def borrow_book(self, book, member):
