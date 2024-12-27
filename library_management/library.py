@@ -57,17 +57,7 @@ class Library:
         if book in self.books:
             self.books.remove(book)
             member.borrow_book(book)
-
-    def return_book(self, book, member):
-        """
-        Allows a member to return a book to the library.
-
-        Args:
-        - book (Book): The book to be returned.
-        - member (Member): The member returning the book.
-        """
-        self.books.append(book)
-        member.return_book(book)
+        
 
     def list_available_books(self):
         """
@@ -76,10 +66,49 @@ class Library:
         for book in self.books:
             print(f"Title: {book.title}, Author: {book.author}")
 
-    def list_borrowed_books(self):
+
+    def list_borrowed_books(self, member_name, book_title):
         """
         Lists all borrowed books and their borrowers.
         """
+        member = None
+        for m in self.members:
+            if m.name == member_name:
+                member = m
+                break
+
+        book = None
+        for b in self.books:
+            if b.title == book_title and not b.is_borrowed:
+                book = b
+                break
+
         for member in self.members:
             for book in member.borrowed_books:
                 print(f"Title: {book.title}, Author: {book.author}, Borrower: {member.name}")
+
+    
+    def return_book(self, book_title, member_name):
+        """
+        Allows a member to return a book to the library.
+
+        Args:
+        - book (Book): The book to be returned.
+        - member (Member): The member returning the book.
+        """
+
+        member = None
+        for m in self.members:
+            if m.name == member_name:
+                member = m
+                break
+
+        book = None
+        for b in self.books:
+            if b.title == book_title and not b.is_borrowed:
+                book = b
+                break
+
+
+        self.books.append(book)
+        member.return_book(book)
