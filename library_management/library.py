@@ -72,7 +72,7 @@ class Library:
 
 
 
-    def borrow_book(self, member_name, book_title):
+    def list_borrowed_books(self, member_name, book_title):
         """
         Lists all borrowed books and their borrowers.
         """
