@@ -1,6 +1,6 @@
 import json
-from .book import Book
-from .member import Member, StudentMember, TeacherMember
+from book import Book
+from member import Member, StudentMember, TeacherMember
 
 class Library:
     """
@@ -17,6 +17,7 @@ class Library:
         """
         self.books = [] # empty list to store books
         self.members = [] # empty list to store members of the library
+
 
     def add_book(self, book):
         """
