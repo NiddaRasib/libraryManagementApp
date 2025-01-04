@@ -140,4 +140,5 @@ def member_menu(library):
         else:
             print("\nInvalid option please try again")
 
-
+if __name__ == "__main__":
+    main_menu()
