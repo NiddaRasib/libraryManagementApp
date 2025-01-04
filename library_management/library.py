@@ -48,7 +48,7 @@ class Library:
 
         
 
-    def list_borrowed_book(self, book, member):
+    def list_borrowed_books(self, book, member):
         """
         lists all the borrowed books from the library.
 
@@ -72,7 +72,7 @@ class Library:
 
 
 
-    def list_borrowed_books(self, member_name, book_title):
+    def borrow_book(self, member_name, book_title):
         """
         Lists all borrowed books and their borrowers.
         """
@@ -88,10 +88,15 @@ class Library:
                 book = b
                 break
 
-        for member in self.members:
-            for book in member.borrowed_books:
-                print(f"Title: {book.title}, Author: {book.author}, Borrower: {member.name}")
 
+        if member and book:
+            book.is_borrowed = True
+            member.borrow_book(book)
+            print(f"Title: {book.title}, Author: {book.author}, borrowed by: {member.name}")
+        else:
+            print("The member does not exit or the book is not available")
+
+                
     
     def return_book(self, book_title, member_name):
         """
@@ -114,6 +119,10 @@ class Library:
                 book = b
                 break
 
-
-        self.books.append(book)
-        member.return_book(book)
+        if member and book:
+            book.is_borrowed = False
+            member.return_book(book)
+            print(f"Title: {book.title}, Author: {book.author}, returned by: {member.name}")
+        else:
+            print("The member does not exit or the book is not available")
+            
